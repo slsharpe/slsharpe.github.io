@@ -41,7 +41,7 @@ My personal interests include video games and immersing myself in a good book du
 
   This website is Oanh's, this is where she showcases her creative works. From her biography, I can tell it brings her pure joy. I think it is amazing those who set out to do multiple avenues and not limiting themselves to one career or one passion. It shows me to follow the gift of finding something that we find joy in. 
   
-  The aesthetic of her art combines design and photography together. I also have a background in Design as well as Sales. Currently I work to help guests reflect their dream room. I believe this is also what attracted me to photography. I believe my appreciation for the subtle details in life is also what attracted me to photography.
+  The aesthetic of her art combines design and photography together. I also have a background in Design, as well as Sales. Currently I work to help guests reflect their dream room. I believe this is also what attracted me to photography. I believe my appreciation for the subtle details in life is also what attracted me to photography.
 
 #### Website Showcases
 * Photos organized by different categories
