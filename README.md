@@ -16,9 +16,9 @@ My personal interests include video games and immersing myself in a good book du
 ## Websites I Recommend
 [Nate In The Wild](https://www.nateluebbe.com/)  
 
-  This website is Nate's, he started as an avid outdoorsman who wished to live in the moment and capture his travels. His story is inspiring to me. It is not grand how it started or having all the latest equipment. He just did it, learned and adapted. 
+  This website belongs to Nate, he started as an avid outdoorsman who wished to live in the moment and capture his travels. His story is inspiring to me. It was not grand of how it started or did he have all the latest equipment. He went forth, learned and adapted. 
   
-  Personally, my childhood what made it great was being outside and exploring. Looking back I pretended that I could take pictures anywhere I looked even though I had no camera. The visual memory remained and I always found nature to be fascinating. 
+  Personally, what made my childhood great was being outside and exploring. Looking back I pretended I could take pictures of everything I saw, even though I did not have a camera. The visual memory remained and I always found nature to be fascinating. 
 
 ---
 
@@ -39,9 +39,9 @@ My personal interests include video games and immersing myself in a good book du
 
 [lulu and isabelle studio](https://www.luluandisabelle.com/) 
 
-  This website is Oanh's, this is her hobby and her website shows off her creative works. I can tell from her biography it brings her pure joy. I think it is amazing those who set out to do multiple avenues and not limit themselves to one career or one interest. It shows me to follow the gift of finding something that we find joy in. 
+  This website is Oanh's, this is where she showcases her creative works. From her biography, I can tell it brings her pure joy. I think it is amazing those who set out to do multiple avenues and not limiting themselves to one career or one passion. It shows me to follow the gift of finding something that we find joy in. 
   
-  The aesthetic of her art brings design and photography together. I have a background in Design as well as Sales. Currently I work alongside to helping guests reflecting their dream room. I beleive this is also what attracted me to photography. I believe my appreciation for the subtle details in life is also what attracted me to photography.
+  The aesthetic of her art combines design and photography together. I also have a background in Design as well as Sales. Currently I work to help guests reflect their dream room. I believe this is also what attracted me to photography. I believe my appreciation for the subtle details in life is also what attracted me to photography.
 
 #### Website Showcases
 * Photos organized by different categories
