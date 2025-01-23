@@ -35,10 +35,10 @@ Steps:
 
 Measures Taken:
 1. Traffic filtering by firewall
-    > Firewall anaylzes incoming traffic, detecting known malicious web traffic/patterns/bot nets. Blocking malicious attacks as well as blocking web traffic based on configured changes and vendor support.
+    > Firewall anaylzes incoming traffic, detecting known malicious web traffic/patterns/bot nets. Blocking malicious attacks and web traffic based on configured changes and vendor support.
 2. Overload Detection 
     > Webserver detects overload and requests help from Firewall as some rules may alert the firewall of possible DoS attack due to amount of traffic and timeframe.
 3. Selective Traffic Allowance 
     > The Firewall allows traffic through to the Webserver while blocking attack traffic from the BotNet or malicious actors.
-4.SOC Investigation
-    > The SOC receives alerts from the Firewall, investigates and refines defense strategies to further migigate DoS attacks.
+4. SOC Investigation
+    > The SOC receives alerts from the Firewall, investigates and refines defense strategies to further mitigate DoS attacks.
