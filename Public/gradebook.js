@@ -1,47 +1,63 @@
 function fetchGradeData() {
   let xhr = new XMLHttpRequest();
-  let apiRoute = "/api/grades";
-
-  xhr.onreadystatechange = function() {
-    if (xhr.readyState === xhr.DONE) {
+  xhr.onreadystatechange = function () {
+    if (xhr.readyState === XMLHttpRequest.DONE) {
       if (xhr.status !== 200) {
         console.error(`Could not get grades. Status: ${xhr.status}`);
       } else {
-        populateGradebook(JSON.parse(xhr.responseText));
+        let data = JSON.parse(xhr.responseText);
+        populateGradebook(data);
       }
     }
-  }.bind(this);
-
-  xhr.open("get", apiRoute, true);
+  };
+  xhr.open("GET", "/api/grades", true);
   xhr.send();
 }
-function populateGradebook(data) {
-  const tableElem = document.getElementById("gradebook");
 
-  data.forEach(function(assignment) {
+function populateGradebook(data) {
+  const tableBody = document.getElementById("gradebook");
+
+  data.forEach(function (entry) {
     let row = document.createElement("tr");
 
-    let columns = [];
+    let nameCell = document.createElement("td");
+    nameCell.textContent = `${entry.last_name}, ${entry.first_name}`;
 
-    // First column: full name
-    columns.name = document.createElement("td");
-    columns.name.appendChild(
-      document.createTextNode(
-        assignment.last_name + ", " + assignment.first_name
-      )
-    );
+    let gradeCell = document.createElement("td");
+    gradeCell.textContent = entry.total_grade;
 
-    // Second column: grade
-    columns.grade = document.createElement("td");
-    columns.grade.appendChild(
-      document.createTextNode(assignment.total_grade)
-    );
-
-    // Add columns to row
-    row.appendChild(columns.name);
-    row.appendChild(columns.grade);
-
-    // Add row to table
-    tableElem.appendChild(row);
+    row.appendChild(nameCell);
+    row.appendChild(gradeCell);
+    tableBody.appendChild(row);
   });
 }
+const express = require("express");
+const { Pool } = require("pg");
+const path = require("path");
+
+const app = express();
+const port = 3000;
+
+const pool = new Pool({
+  user: "postgres",        // <-- change this if your username is different
+  host: "localhost",
+  database: "gradebook",   // <-- make sure this database exists
+  password: "yourpassword", // <-- update with your PostgreSQL password
+  port: 5432
+});
+
+app.use(express.static(path.join(__dirname, "public")));
+
+app.get("/api/grades", async (req, res) => {
+  try {
+    const result = await pool.query("SELECT * FROM grades");
+    res.json(result.rows);
+  } catch (err) {
+    console.error(err);
+    res.status(500).send("Error retrieving grades");
+  }
+});
+
+app.listen(port, () => {
+  console.log(`Server running at http://localhost:${port}`);
+});
