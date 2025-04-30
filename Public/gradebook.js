@@ -15,3 +15,33 @@ function fetchGradeData() {
   xhr.open("get", apiRoute, true);
   xhr.send();
 }
+function populateGradebook(data) {
+  const tableElem = document.getElementById("gradebook");
+
+  data.forEach(function(assignment) {
+    let row = document.createElement("tr");
+
+    let columns = [];
+
+    // First column: full name
+    columns.name = document.createElement("td");
+    columns.name.appendChild(
+      document.createTextNode(
+        assignment.last_name + ", " + assignment.first_name
+      )
+    );
+
+    // Second column: grade
+    columns.grade = document.createElement("td");
+    columns.grade.appendChild(
+      document.createTextNode(assignment.total_grade)
+    );
+
+    // Add columns to row
+    row.appendChild(columns.name);
+    row.appendChild(columns.grade);
+
+    // Add row to table
+    tableElem.appendChild(row);
+  });
+}
